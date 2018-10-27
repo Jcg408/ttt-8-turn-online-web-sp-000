@@ -3,9 +3,7 @@ def turn(board)
 
   index = gets.strip
   input_to_index(index)
-  if valid_move? == true
-    move(board, index, value)
- end
+  
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
