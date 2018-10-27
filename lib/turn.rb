@@ -16,10 +16,10 @@ end
 
 def input_to_index(input)
   position_index = input.to_i - 1
-
+  if position_index
 end
 
-def valid_move? (board, position_index)
+def valid_move? (board, index)
   index.between?(0,8)  && !position_taken?(board, index)
 end
 
