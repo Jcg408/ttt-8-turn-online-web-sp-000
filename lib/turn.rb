@@ -1,9 +1,4 @@
-def turn(board)
-  puts "Please enter 1-9:"
 
-  index = gets.strip
-  input_to_index(index)
-  
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -15,7 +10,6 @@ end
 
 def input_to_index(input)
   position_index = input.to_i - 1
-  if position_index
 end
 
 def valid_move? (board, index)
@@ -33,3 +27,10 @@ def move(board, index, value='X')
   board[index] = value
 end
 
+def turn(board)
+  puts "Please enter 1-9:"
+
+  index = gets.strip
+  input_to_index(index)
+
+ end
